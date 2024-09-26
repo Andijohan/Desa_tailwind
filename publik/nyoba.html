@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="javascript.js" defer></script>
+</head>
+<body class="bg-customTeal">
+    <form class="flex justify-center items-center h-screen">
+        <div class="bg-bebas mt-5 py-6 px-10 rounded-md w-96">
+            <div class="flex justify-center items-center w-full h-72">
+                <label for="input-file" id="drop-area" class="w-80 h-72 p-8 bg-white text-center rounded-lg border-2 border-blue-500 cursor-pointer">
+                    <input type="file" accept="image/*" id="input-file" hidden>
+                    <div id="img-view" class="w-full h-full flex items-center justify-center text-center bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="icon.png" alt="placeholder" class="w-28 h-28" id="placeholder-img">
+                    </div>
+                </label>
+            </div>
+            <label for="text" class="block text-base mb-1 text-white">NIK</label>
+            <input type="text" id="text" class="rounded-md p-2 w-full" placeholder="NIK">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="css.css">
+   
+</head>
+<body class="bg-customTeal">
+    <form class="flex justify-center items-center h-screen ">
+        <div class="bg-bebas mt-5 py-6 my-6 px-10 rounded-md ">
+        <h1 class="text-center text-white text-2xl">Profil</h1>
+        <div class=" flex items-center justify-center min-h-screen flex-col">
+            <label for="input-file" id="drop-area" class="flex items-center justify-center w-36 h-36 p-8 text-center border-2 border-dashed border-blue-300 rounded-lg transition-colors duration-300 hover:bg-gray-200 cursor-pointer">
+                <input type="file" accept="image/*" id="input-file" hidden>
+                <div id="img-view" class="w-full h-full rounded-lg bg-cover bg-center flex flex-col items-center justify-center relative">
+                    <img src="Foto Profil.png" alt="" class="w-24 object-cover">
+    
+                </div>
+            </label>
+        </div>
+
+            <div class="flex justify-start flex-col p-6 ">
+            <label for="Username" class="block text-base mb-1  justify-start text-white font-bold">NIK :</label>
+            <input type="text" id="text" class="p-2 w-72 rounded-md bg-transparent focus:outline-none" placeholder="Silahkan di isi">
+            <label for="Username" class="block text-base mb-1  justify-start text-white font-bold">Nama Lengkap :</label>
+            <input type="text" id="text" class="p-2 w-72 rounded-md  bg-transparent focus:outline-none" placeholder="Silahkan di isi">
+            <label for="Username" class="block text-base mb-1  justify-start text-white font-bold">Alamat :</label>
+            <input type="text" id="text" class="p-2 w-72 rounded-md bg-transparent focus:outline-none" placeholder="Silahkan di isi">
+            <label for="Username" class="block text-base mb-1  justify-start text-white font-bold">Tempat Tanggal Lahir :</label>
+            <input type="text" id="text" class="p-2 w-7 rounded-md bg-transparent focus:outline-none" placeholder="Silahkan di isi">
+            <label for="countries" class="block text-base mb-1  justify-start text-white font-bold">Jenis Kelamin :</label>
+            <input type="text" id="text" class="p-2 w-72 rounded-md bg-transparent focus:outline-none" placeholder="Silahkan di isi">
+            <label for="Username" class="block text-base mb-1  justify-start text-white font-bold">Email :</label>
+            <input type="text" id="text" class="p-2 w-72rounded-md bg-transparent focus:outline-none" placeholder="Silahkan di isi">
+            <label for="Username" class="block text-base mb-1  justify-start text-white font-bold">No Telepon :</label>
+            <input type="text" id="text" class="p-2 w-72 rounded-md bg-transparent focus:outline-none" placeholder="Silahkan di isi">
+
+          </div>
+            <div class="flex flex-row justify-between">
+            <div class="mt-5 flex justify-center items-center">
+                <button class="borde-2 bg-login text-white p-2.5 w-44 border-0 rounded-md shadow-md cursor-not-allowed">Keluar</button>
+            </div>
+            <div class="mt-5 flex justify-center items-center">
+            <button class="borde-2 bg-login text-white p-2.5 w-44 border-0 rounded-md shadow-md cursor-not-allowed">Simpan Perubahan</button>
+        </div>
+        </div>
+        </div>
+    </div>
+    </form>
+    <script src="javascript.js" defer></script>
+</body>
+
+</html>

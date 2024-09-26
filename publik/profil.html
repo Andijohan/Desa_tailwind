@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Image Uploader</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="javascript.js"></script>
+    <style>
+        .dropzone {
+            border: 2px dashed #ddd;
+            border-radius: 12px; /* Slightly rounded corners */
+            transition: background-color 0.3s;
+            padding: 1.5rem; /* Adjust padding as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .dropzone.dragover {
+            background-color: #f0f0f0;
+        }
+        #preview-container {
+            width: 300px; /* Set desired width */
+            height: 300px; /* Set desired height */
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+        #preview-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover; /* Ensures the image covers the container without distortion */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="max-w-md w-full">
+        <div id="dropzone" class="dropzone">
+            <p class="text-gray-600">Drag and drop an image here or click to upload</p>
+        </div>
+        <div id="preview-container" class="mt-4">
+            <!-- Image preview will be displayed here -->
+        </div>
+    </div>
+
+    <input type="file" id="fileInput" class="hidden">
+    
+    <script src="script.js"></script>
+</body>
+</html>

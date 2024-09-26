@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: white; }
+        }
+
+        .typing-effect {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            font-size: 1.5rem;
+            width: 10ch;
+            animation: typing 4s steps(30) infinite alternate, blink-caret 1s step-end infinite;
+        }
+    </style>
+</head>
+<body class="bg-customTeal">
+    <header class="bg-bebas">
+        <nav class="flex justify-between items-center w-[92%] ">
+          <div>
+            <img class="w-16 ml-8 m-1" src="logo.png">
+          </div>
+          <div class="">
+            <ul class="flex items-center gap-[4vw] text-white text-xl">
+              <li>
+                <a class="hover:text-gray-500" href="#">BERANDA</a>
+              </li>
+              <li>
+                <a class="hover:text-gray-500" href="#">TENTANG</a>
+              </li>
+              <li>
+                <a class="hover:text-gray-500" href="#">BERITA</a>
+              </li>
+              <li>
+                <a class="hover:text-gray-500" href="#">LAYANAN</a>
+              </li>
+              <li>
+                <a class="hover:text-gray-500" href="#">PROFIL</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    <div class="relative">
+        <img class="w-full h-auto" src="imgdesa.png">
+        <div class="absolute inset-0 flex items-center justify-center bg-opacity-50">
+            <h1 class="text-white text-4xl md:text-4xl  text-center">
+                 <span class="typing-effect">Selamat Datang Di Kiwariku Desa Situsari  </span>
+            </h1>
+        </div>
+    </div>
+    <div>
+      <img class="transform-none">
+    </div>
+</body>
+</html> 
