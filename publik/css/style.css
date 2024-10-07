@@ -745,8 +745,8 @@ video {
   margin-top: 2rem;
 }
 
-.box-border {
-  box-sizing: border-box;
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -811,10 +811,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-32 {
-  height: 8rem;
 }
 
 .min-h-80 {
@@ -893,8 +889,12 @@ video {
   width: 100%;
 }
 
-.w-32 {
-  width: 8rem;
+.w-60 {
+  width: 15rem;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-6xl {
@@ -1055,10 +1055,6 @@ video {
 
 .border-2 {
   border-width: 2px;
-}
-
-.border-4 {
-  border-width: 4px;
 }
 
 .border-dashed {
@@ -1487,6 +1483,10 @@ video {
 
   .sm\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .sm\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .sm\:max-w-xl {
