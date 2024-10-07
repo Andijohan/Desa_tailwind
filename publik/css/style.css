@@ -717,6 +717,10 @@ video {
   margin-inline-start: 0.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -745,10 +749,6 @@ video {
   margin-top: 2rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
 .block {
   display: block;
 }
@@ -759,6 +759,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -825,6 +829,10 @@ video {
   min-height: 100vh;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -889,12 +897,20 @@ video {
   width: 100%;
 }
 
-.w-60 {
-  width: 15rem;
+.w-9 {
+  width: 2.25rem;
 }
 
-.w-screen {
-  width: 100vw;
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-7\/12 {
+  width: 58.333333%;
 }
 
 .max-w-6xl {
@@ -931,10 +947,6 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1057,6 +1069,10 @@ video {
   border-width: 2px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-dashed {
   border-style: dashed;
 }
@@ -1163,6 +1179,10 @@ video {
   padding: 0.625rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1246,6 +1266,30 @@ video {
 
 .pl-7 {
   padding-left: 1.75rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1485,10 +1529,6 @@ video {
     margin-top: 1.25rem;
   }
 
-  .sm\:mt-3 {
-    margin-top: 0.75rem;
-  }
-
   .sm\:max-w-xl {
     max-width: 36rem;
   }
@@ -1529,6 +1569,10 @@ video {
     display: flex;
   }
 
+  .md\:table {
+    display: table;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -1545,12 +1589,36 @@ video {
     width: 100%;
   }
 
+  .md\:w-80 {
+    width: 20rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .md\:w-7 {
+    width: 1.75rem;
+  }
+
   .md\:max-w-md {
     max-width: 28rem;
   }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
